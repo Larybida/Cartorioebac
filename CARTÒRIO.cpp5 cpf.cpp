@@ -1,19 +1,19 @@
-#include <stdio.h> //biblioteca de comunicaçao com o usuário 
-#include <stdlib.h> //biblioteca de alocação de espaço em memória 
-#include <locale.h> //biblioteca de alocações de texto por região
+#include <stdio.h> //biblioteca de comunicaÃ§ao com o usuÃ¡rio 
+#include <stdlib.h> //biblioteca de alocaÃ§Ã£o de espaÃ§o em memÃ³ria 
+#include <locale.h> //biblioteca de alocaÃ§Ãµes de texto por regiÃ£o
 #include <string.h> //biblioteca responsavel por cuidar das string 
 
-int registro()//Funçao responsalvel por cadastrar os usuarios no sistema 
+int registro()//FunÃ§ao responsalvel por cadastrar os usuarios no sistema 
 {
-	//inicio criaçao de variaveis/string
+	//inicio criaÃ§ao de variaveis/string
 	char arquivo [40];
 	char cpf[40];
 	char nome[40];
 	char sobrenome[40];
 	char cargo [40];
-	//final criaçao de variaveis/string
+	//final criaÃ§ao de variaveis/string
 	
-	printf("Digite o CPF a ser cadastrado : ");//coletando informaçao do usuario
+	printf("Digite o CPF a ser cadastrado : ");//coletando informaÃ§ao do usuario
 	scanf("%s", cpf );//%s refere-se a string
 	
 	strcpy(arquivo, cpf );//Responsavel por copiar os valores das string
@@ -83,7 +83,7 @@ int registro()//Funçao responsalvel por cadastrar os usuarios no sistema
    	       
    while(fgets(conteudo, 200, file )!= NULL) 	       
    {
-   	printf("\n Essas sao as informaçoes do usuario :");
+   	printf("\n Essas sao as informaÃ§oes do usuario :");
    	printf("%s", conteudo);
    	printf("\n\n");
    }
@@ -122,7 +122,7 @@ int deletar ()
 
 int main()
 {
-	int opcao=0;  //Definindo variáveis
+	int opcao=0;  //Definindo variÃ¡veis
 	int x=1;
 	
 	for(x=1;x=1;)
@@ -132,8 +132,8 @@ int main()
 	
       setlocale(LC_ALL, "Portuguese");//Definindo a limguagem
      
-       printf("###Cartório da EBAC ###\n\n");//inicio do menu
-       printf("Escolher opções desejada do menu:\n\n");
+       printf("###CartÃ³rio da EBAC ###\n\n");//inicio do menu
+       printf("Escolher opÃ§Ãµes desejada do menu:\n\n");
        printf("\t1 - registrer nomes\n");
        printf("\t2 - Consultar nomes\n");
        printf("\t3 - Deletar nomes \n\n");
@@ -145,9 +145,9 @@ int main()
        system("cls");//responsavel por limpar a tela 
       
       
-       switch(opcao) //inicio da seleçao do menu 
+       switch(opcao) //inicio da seleÃ§ao do menu 
        {
-           case 1:// chamada de funçoes 
+           case 1:// chamada de funÃ§oes 
           registro();
 	       break;
 	      
@@ -161,14 +161,14 @@ int main()
 		  
 		   case 4:
 		   	printf("Obrigado por ultilizar o sistema!\n");
-		   	
+		   	break;
 		   	
 		   default:
 		    printf("Essa opcao nao esta disponivel\n");
 		    system("pause");
 		    break;
 		     
-	  } // fim da seleçao 
+	  } // fim da seleÃ§ao 
  
 	
     }  
